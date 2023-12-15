@@ -1,0 +1,20 @@
+div{
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  display: flex;
+  overflow: auto;
+  float: left;
+}
+li{
+  display: block;
+  list-style: none;
+  padding: 5px;
+ /* border-bottom: 1px solid black;*/
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #201f1f;
+}
