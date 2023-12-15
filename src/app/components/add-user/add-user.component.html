@@ -1,0 +1,50 @@
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">User</label>
+    <input
+      type="text"
+      name="text"
+      [(ngModel)]="text"
+      id="text"
+      placeholder="Add User"
+    />
+  </div>
+  <div class="form-control">
+    <label for="day">First name</label>
+    <input
+      type="text"
+      name="first_name"
+      [(ngModel)]="first_name"
+      id="day"
+      placeholder="Add first name"
+    />
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">Last name</label>
+    <input
+      type="checkbox"
+      name="last_name"
+      [(ngModel)]="last_name"
+      id="last_name"
+    />
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">Avatar</label>
+    <input
+      type="checkbox"
+      name="avatar"
+      [(ngModel)]="avatar"
+      id="avatar"
+    />
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">email</label>
+    <input
+      type="checkbox"
+      name="email"
+      [(ngModel)]="email"
+      id="email"
+    />
+  </div>
+  <input type="submit" value="Save User" class="btn btn-block" />
+</form>
